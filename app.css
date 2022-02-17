@@ -1,0 +1,66 @@
+*,*::after,*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(10, 9, 9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: rgba(92, 88, 88, 0.5);
+    box-shadow: 0px 0px 50px 500px rgba(92, 88, 88, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 3px solid rgba(0,0,0,0.03);
+    background-color: #333131;
+    box-shadow: 
+        -10px -15px 15px rgba(255,255,255,0.3),
+        10px 15px 15px #000,
+        inset 10px 10px 10px rgba(0,0,0,0.8),
+        inset -10px -10px 10px rgba(255,255,255,0.3),
+        inset 12px 12px 5px rgba(255,255,255,0.3),
+        inset -12px -12px 5px rgba(0,0,0,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clockDisplay {
+    background-color: #000;
+    height: 410px;
+    width: 410px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.time {
+    font-size: 7rem;
+    font-weight: 100;
+}
+
+.day {
+    font-size: 1.2rem;
+    letter-spacing: 0.2ch;
+    font-weight: 200;
+}
